@@ -3,12 +3,12 @@ import { Layout } from 'antd';
 import '../index.scss';
 import { Button } from 'antd';
 import { PhoneOutlined,MailOutlined, FacebookOutlined, InstagramOutlined, TwitterOutlined } from '@ant-design/icons';
-
+import BannerHouse from "../BannerHouse";
 const { Header, Content, Footer } = Layout;
 
 function Main() {
     return (
-              <> <Layout style={{color: 'blue'}}>
+               <Layout style={{color: 'blue'}}>
                     <Header className="head">
                       <div class ='left_head'>
                       <h1 style={{color:'white', textAlign:'center',position:"relative",left:200,paddingLeft:40,height:20,fontFamily:"Times New Roman"}}>CHO THUÊ PHÒNG TRỌ</h1>
@@ -27,6 +27,13 @@ function Main() {
                             </div>
                         </div>
                     </Header>
+
+                  
+                       <BannerHouse /> 
+                       {/* {Components must start uppercase, otherwise React thinks that 
+                        they are simple HTML tags and not components. So you must change player to Player everywhere} */}
+                
+
                     <Content className="content">Content</Content>
                     <Footer className="foot">
                       <div className="title">
@@ -62,14 +69,13 @@ function Main() {
                        </div>
                         
                         <div className="foot4">
-                          <hr></hr>
+                          <hr style={{position: "relative",top:20}}></hr>
                           <h3>Copyright © 2022 - 2030 Thuephongtro.com.</h3>
                         </div>
                         
                       </div>
                     </Footer>
                 </Layout>
-              </>
     );
   }
 
