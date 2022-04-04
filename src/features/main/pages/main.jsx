@@ -11,7 +11,7 @@ function Main() {
                <Layout style={{color: 'blue'}}>
                     <Header className="head">
                       <div class ='left_head'>
-                      <h1 style={{color:'white', textAlign:'center',position:"relative",left:200,paddingLeft:40,height:20,fontFamily:"Times New Roman"}}>CHO THUÊ PHÒNG TRỌ</h1>
+                      <h1 style={{color:'white', textAlign:'center',position:"relative",left:200,paddingLeft:200,height:20,fontFamily:"Times New Roman"}}>CHO THUÊ PHÒNG TRỌ</h1>
                           <h1 style={{color:'aqua', fontSize: '50px',width: 30}}>TMA</h1>
                             <div> 
                                 <li>Trang chủ</li>

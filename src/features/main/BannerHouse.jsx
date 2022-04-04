@@ -1,32 +1,45 @@
 import React from 'react';
 import './index.scss';
 import { LeftCircleOutlined, RightCircleOutlined  } from '@ant-design/icons';
+import img1 from '../main/Img/tro1.jpg';
+import img2 from '../main/Img/tro2.jpg';
+import img3 from '../main/Img/tro3.jpg';
 class BannerHouse extends React.Component{
   
   render(){
-    var img1 = ["https://th.bing.com/th/id/OIP.FNKRddw7KKYTxf-mCQgkRAHaEb?w=268&h=180&c=7&r=0&o=5&pid=1.7","https://th.bing.com/th/id/OIP.YI94pAa65omuIn4_s5CjaQHaE9?w=239&h=180&c=7&r=0&o=5&pid=1.7"
-  ,"https://th.bing.com/th/id/OIP.peA214xR_pPtgO_4DaBxFwHaE7?w=241&h=180&c=7&r=0&o=5&pid=1.7"];   
+    const changeIMG = () =>{
+      var index = 1;
+      var arr1 = [img1,img2,img3]; 
+      document.getElementById('img').src = arr1[index] ;
+      index ++;
+      if(index == 3){
+        index = 0;
+      }
+      var f = () => changeIMG();
+      setInterval(f,1000);
+    }
+      
         return (
           <div className='containBanner'>
             <div className='container'>
                 <div className='left_circle'>
-                <LeftCircleOutlined  style={{color:'black',fontSize:30}}/>
+                <LeftCircleOutlined  style={{color:'black',fontSize:30,cursor: "pointer"}}/>
                 </div>
 
                 <div className='right_circle'>
-                <RightCircleOutlined  style={{color:'black',fontSize:30}}/>
+                <RightCircleOutlined  style={{color:'black',fontSize:30,cursor: "pointer"}}/>
                 </div>
                 
                    <div className='slides'> 
-                      <img src="https://th.bing.com/th/id/OIP.FNKRddw7KKYTxf-mCQgkRAHaEb?w=268&h=180&c=7&r=0&o=5&pid=1.7" alt="" />
+                      <img id ='img' onClick={() => changeIMG()} src={img1} alt="" />
                   </div>
 
                   <div className='slides'>
-                      <img src="https://th.bing.com/th/id/OIP.YI94pAa65omuIn4_s5CjaQHaE9?w=239&h=180&c=7&r=0&o=5&pid=1.7" alt="" />
+                      <img src={img2} alt="" />
                   </div>
 
                   <div className='slides'>
-                    < img src="https://th.bing.com/th/id/OIP.peA214xR_pPtgO_4DaBxFwHaE7?w=241&h=180&c=7&r=0&o=5&pid=1.7" alt="" />
+                    < img src={img3} alt="" />
                   </div>
 
                 <div className='nevigation'>

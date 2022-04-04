@@ -33,7 +33,7 @@ li{
     float: right;
     position: relative;
     bottom: 170px;
-    left: 480px;
+    left: 600px;
     padding: 5px;
 }
 .right_head button{
@@ -88,7 +88,7 @@ p{
     width: 400px;
     float: left;
     position: relative;
-    right: 20px;
+    left: 20px;
     bottom: 20px;
     height: 120px;
     text-align: center;
@@ -97,7 +97,7 @@ p{
 
 .foot3{
     background-color: #0f4d92;
-    width: 420px;
+    width: 450px;
     float: left;
     position: relative;
     right: 20px;
@@ -141,7 +141,7 @@ p{
 .slides{
     float: left;
   display: inline-table;
-  padding-left: 70px;
+  padding-left: 90px;
     
 }
 img{
@@ -153,11 +153,10 @@ img{
 
 .nevigation{
     position: absolute;
-    bottom: 10px;
+    bottom: 240px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    margin-bottom: 500px;
 }
 
 .bar{
