@@ -28,7 +28,6 @@ function Main() {
                         </div>
                     </Header>
 
-                  
                        <BannerHouse /> 
                        {/* {Components must start uppercase, otherwise React thinks that 
                         they are simple HTML tags and not components. So you must change player to Player everywhere} */}

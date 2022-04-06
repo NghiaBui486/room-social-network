@@ -5,6 +5,8 @@
 .head{
     background-color: #0f4d92;
     height: 100px;
+    position: fixed;
+    width: 100%;
 }
 /*header*/
 
@@ -33,7 +35,7 @@ li{
     float: right;
     position: relative;
     bottom: 170px;
-    left: 600px;
+    left: 480px;
     padding: 5px;
 }
 .right_head button{
@@ -88,7 +90,7 @@ p{
     width: 400px;
     float: left;
     position: relative;
-    left: 20px;
+    right: 20px;
     bottom: 20px;
     height: 120px;
     text-align: center;
@@ -97,7 +99,7 @@ p{
 
 .foot3{
     background-color: #0f4d92;
-    width: 450px;
+    width: 420px;
     float: left;
     position: relative;
     right: 20px;
@@ -121,14 +123,6 @@ p{
 }
 
 //slide
-.containBanner{
-   
-    width: auto;
-    height: 300px;
-    padding: 20px;
-    
-
-}
 
 .container {
   height: 200px;
@@ -141,7 +135,7 @@ p{
 .slides{
     float: left;
   display: inline-table;
-  padding-left: 90px;
+  padding-left: 70px;
     
 }
 img{
@@ -153,10 +147,11 @@ img{
 
 .nevigation{
     position: absolute;
-    bottom: 240px;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
+    margin-bottom: 500px;
 }
 
 .bar{
