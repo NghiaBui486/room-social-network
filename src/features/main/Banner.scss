@@ -1,12 +1,28 @@
+@import "react-alice-carousel/lib/scss/alice-carousel.scss";
 .containBanner{
     width: auto;
     height: 400px;
     background-color: aliceblue;
+    
 }
 
-.MySlides {
+.mySlides {
     padding-top: 100px;
     border: 1px solid rgb(255, 250, 250);
+}
+
+
+.di1{
+    border: 2px solid black;
+    margin-top: 100px;
+    height: 300px;
+    
+}
+
+.carsousel{
+    border: 2px solid rgb(206, 68, 68);
+    width: auto;
+    height: 10px;
 }
 
 
