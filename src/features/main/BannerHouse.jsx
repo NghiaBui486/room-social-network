@@ -13,24 +13,23 @@ class BannerHouse extends React.Component{
             <div className='containBanner'>
             <div>
             <ReactCaroussel className ='carsousel'
-               slidesToShow={3}
-              slidesToScroll={3}
+               slidesToShow={4}
+              slidesToScroll={1}
                 infinite={true}
                autoplay={false}
               speed={2}    // 2s: speed of autoplay
               display={{ 
-                arrows: true, 
-                dots: true 
+              arrows: true, 
+              dots: true ,
                 }}>
-                      <div className='di1'>
-                      <img class="mySlides" src={images.tro1} style={{width:"auto",height:"auto"}}/>
-                      </div>
-                      <div className='di1'>2</div>
-                      <div className='di1'>3</div>
-                      <div className='di1'> 4</div>
-                      <div className='di1'>5</div>
-                      <div className='di1'>6</div>
-        </ReactCaroussel>
+                      <div className='di1'></div>
+                      <div className='di2'></div>
+                      <div className='di3'></div>
+                      <div className='di4'></div>
+                      <div className='di5'></div>
+                      <div className='di6'></div>
+                      <div className='di7'></div>
+            </ReactCaroussel>
             </div>
             </div>
             );
