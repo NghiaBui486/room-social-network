@@ -19,15 +19,15 @@ class Searching extends React.Component {
                 </div>
                 <div className="sub_search">
                     <div className="searches">
-                         <Select defaultValue="Giá" allowClear>
-                        <Option value="">a</Option>
-                        <Option value="">b</Option>
-                        <Option value="">c</Option>
+                         <Select defaultValue="Giá" style={{width:125}} allowClear>
+                        <Option value="10">10</Option>
+                        <Option value="20">20</Option>
+                        <Option value="56">56</Option>
                         </Select>
                     </div>
 
                     <div className="searches">
-                         <Select defaultValue="Tỉnh" allowClear>
+                         <Select defaultValue="Tỉnh" style={{width:125}} allowClear>
                         <Option value=""></Option>
                         </Select>
                     </div>
@@ -39,25 +39,25 @@ class Searching extends React.Component {
                     </div>
 
                     <div className="searches">
-                         <Select defaultValue="Phường, xã" allowClear>
+                         <Select defaultValue="Phường, xã" style={{width:122}} allowClear>
                         <Option value=""></Option>
                         </Select>
                     </div>
 
                     <div className="searches">
-                         <Select defaultValue="Chủ trọ" allowClear>
+                         <Select defaultValue="Chủ trọ" style={{width:125}} allowClear>
                         <Option value=""></Option>
                         </Select>
                     </div>
 
                     <div className="searches">
-                         <Select defaultValue="Diện tích"  allowClear>
+                         <Select defaultValue="Diện tích" style={{width:125}} allowClear>
                         <Option value=""></Option>
                         </Select>
                     </div>
 
                     <div className="searches">
-                         <Select defaultValue="Đánh giá" allowClear>
+                         <Select defaultValue="Đánh giá" style={{width:125}} allowClear>
                         <Option value=""></Option>
                         </Select>
                     </div>
