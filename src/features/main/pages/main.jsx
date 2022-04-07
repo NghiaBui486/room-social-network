@@ -4,6 +4,7 @@ import '../index.scss';
 import { Button } from 'antd';
 import { PhoneOutlined,MailOutlined, FacebookOutlined, InstagramOutlined, TwitterOutlined } from '@ant-design/icons';
 import BannerHouse from "../BannerHouse";
+import Searching from "../Searching";
 const { Header, Content, Footer } = Layout;
 
 function Main() {
@@ -35,6 +36,7 @@ function Main() {
 
                     <Content className="content">
                     <BannerHouse /> 
+                      <Searching />
                       Content</Content>
                     <Footer className="foot">
                       <div className="title">

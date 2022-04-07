@@ -1,0 +1,35 @@
+.search{
+    border: 2px solid #726c6c;
+    width: auto;
+    height: 100px;
+    position: relative;
+    bottom: 300px;
+    background-color: white;
+}
+
+.title_seatch{
+    width: auto;
+   height: 25px;
+//    border: 2px solid rgb(21, 238, 220);
+}
+
+.sub_search
+{
+    // border: 2px solid rgb(238, 21, 21);
+    // width: auto;
+    height: 67px;
+}
+
+.searches{
+    display: inline-block;
+    width: 100px;
+    float: left;
+    margin: 20px;  
+    position: relative;
+    bottom: 10px;
+    // border: 2px solid rgb(238, 21, 21);
+}
+
+.btn_search{
+    padding-top: 10px;
+}

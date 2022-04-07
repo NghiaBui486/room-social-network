@@ -10,17 +10,16 @@ class BannerHouse extends React.Component{
         render(){
           
             return (
-            <div className='containBanner'>
             <div>
-            <ReactCaroussel className ='carsousel'
+            <div className ='carsousel'>
+            <ReactCaroussel 
                slidesToShow={4}
               slidesToScroll={1}
                 infinite={true}
                autoplay={false}
               speed={2}    // 2s: speed of autoplay
               display={{ 
-              arrows: true, 
-              dots: true ,
+              arrows: true
                 }}>
                       <div className='di1'></div>
                       <div className='di2'></div>

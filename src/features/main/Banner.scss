@@ -2,8 +2,7 @@
 .containBanner{
     width: auto;
     height: 400px;
-    background-color: aliceblue;
-    
+    background-color: rgb(0, 136, 255);
 }
 
 .mySlides {
@@ -19,6 +18,8 @@
     background-image: url("./Img/tro1.jpg");
     background-repeat: no-repeat;
     background-size: 450px 300px;
+    position: relative;
+    bottom: 100px;
 }
 
 .di2{
@@ -28,6 +29,8 @@
     background-image: url("./Img/tro2.jpg");
     background-repeat: no-repeat;
     background-size: 450px 300px;
+    position: relative;
+    bottom: 100px;
 }
 
 .di3{
@@ -37,6 +40,8 @@
     background-image: url("./Img/tro3.jpg");
     background-repeat: no-repeat;
     background-size: 450px 300px;
+    position: relative;
+    bottom: 100px;
 }
 
 .di4{
@@ -46,6 +51,8 @@
     background-image: url("./Img/tro4.jpg");
     background-repeat: no-repeat;
     background-size: 450px 300px;
+    position: relative;
+    bottom: 100px;
 }
 
 .di5{
@@ -55,6 +62,8 @@
     background-image: url("./Img/tro5.jpg");
     background-repeat: no-repeat;
     background-size: 450px 300px;
+    position: relative;
+    bottom: 100px;
 }
 
 .di6{
@@ -64,6 +73,8 @@
     background-image: url("./Img/tro6.jpg");
     background-repeat: no-repeat;
     background-size: 450px 300px;
+    position: relative;
+    bottom: 100px;
 }
 
 .di7{
@@ -73,12 +84,16 @@
     background-image: url("./Img/tro7.jpg");
     background-repeat: no-repeat;
     background-size: 450px 300px;
+    position: relative;
+    bottom: 100px;
 }
 
 .carsousel{
-    border: 2px solid rgb(206, 68, 68);
     width: auto;
-    height: 10px;
+    margin-top: 400px;
+    position: relative;
+    bottom: 300px;
+    max-height: 300px; 
 }
 
 
