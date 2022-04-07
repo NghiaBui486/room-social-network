@@ -5,6 +5,7 @@ import { Button } from 'antd';
 import { PhoneOutlined,MailOutlined, FacebookOutlined, InstagramOutlined, TwitterOutlined } from '@ant-design/icons';
 import BannerHouse from "../BannerHouse";
 import Searching from "../Searching";
+import Login from "../Login";
 const { Header, Content, Footer } = Layout;
 
 function Main() {
@@ -28,16 +29,15 @@ function Main() {
                             </div>
                         </div>
                     </Header>
-
-                      
+                    <Login />
+                     
                        {/* {Components must start uppercase, otherwise React thinks that 
                         they are simple HTML tags and not components. So you must change player to Player everywhere} */}
                 
 
-                    <Content className="content">
-                    <BannerHouse /> 
-                      <Searching />
-                      Content</Content>
+                    
+
+                          
                     <Footer className="foot">
                       <div className="title">
                         <div className="foot1">

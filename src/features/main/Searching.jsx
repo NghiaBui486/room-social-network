@@ -5,7 +5,7 @@ import 'antd/dist/antd.css';
 import { DatePicker, Space } from 'antd';
 import moment from 'moment';
 import { Button } from 'antd';
-import { SearchOutlined } from '@ant-design/icons';
+import { SearchOutlined , StarOutlined } from '@ant-design/icons';
 const { RangePicker } = DatePicker;
 const { Option } = Select;
 const dateFormatList = ['DD/MM/YYYY', 'DD/MM/YY'];
@@ -20,9 +20,9 @@ class Searching extends React.Component {
                 <div className="sub_search">
                     <div className="searches">
                          <Select defaultValue="Giá" style={{width:125}} allowClear>
-                        <Option value="10">10</Option>
-                        <Option value="20">20</Option>
-                        <Option value="56">56</Option>
+                        <Option value="10" />
+                        <Option value="10" />
+                        <Option value="10" />
                         </Select>
                     </div>
 
@@ -49,7 +49,7 @@ class Searching extends React.Component {
                         <Option value=""></Option>
                         </Select>
                     </div>
-
+                
                     <div className="searches">
                          <Select defaultValue="Diện tích" style={{width:125}} allowClear>
                         <Option value=""></Option>
@@ -58,7 +58,9 @@ class Searching extends React.Component {
 
                     <div className="searches">
                          <Select defaultValue="Đánh giá" style={{width:125}} allowClear>
-                        <Option value=""></Option>
+                        <Option value="">
+                                <StarOutlined />
+                        </Option>
                         </Select>
                     </div>
                         
