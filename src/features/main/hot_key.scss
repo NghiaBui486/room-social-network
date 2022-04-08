@@ -1,5 +1,129 @@
-.hot_key{
+.hot_key_word{
     border: 2px solid black;
     width: auto;
     height: 300px;
+    position: relative;
+    bottom: 300px;
+    
 }
+
+.hot_key1{
+    // border: 2px solid rgb(214, 15, 15);
+    width: 419px;
+    height: 300px;
+    display: inline-block;
+    position: relative;
+    bottom: 58px;
+}
+
+.hot_title1{
+    // border: 2px solid rgb(229, 233, 13);
+    width: auto;
+    height: 80px;
+}
+
+.ic1{
+    // border: 2px solid rgb(51, 42, 167);
+    width: 90px;
+    height: 80px;
+    padding: 20px;
+    display: inline-block;
+    
+}
+
+.title1{
+    // border: 2px solid rgb(82, 167, 42);
+    width: 321px;
+    height: 80px; 
+    display: inline-block;
+    padding-top: 36px;
+}
+.statistics{
+   
+    // border: 2px solid rgb(51, 42, 167);
+    width: auto;
+    height: 215px;
+}
+
+.non_statistics{
+    border: 2px solid #333333;
+    width: auto;
+    height: 200px;
+    margin: 5px;   
+}
+
+.non_statistics1{
+    width: auto;
+    height: 50%;
+}
+
+.statistics_ic1{
+    // border: 2px solid #f0ba0b;
+    width: 30%;
+    height: 94px;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    bottom: 0px;
+}
+
+.statistics_data1{
+    // border: 2px solid #f00bca;
+    width: 70%;
+    height: 94px;
+    padding: 20px;
+    display: inline-block;
+    position: relative;
+    bottom: 16px;
+}
+
+.statistics_ic2{
+    // border: 2px solid #f0ba0b;
+    width: 30%;
+    height: 94px;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    bottom: 0px;
+}
+
+.statistics_data2{
+    // border: 2px solid #f00bca;
+    width: 70%;
+    height: 94px;
+    padding: 20px;
+    display: inline-block;
+    position: relative;
+    bottom: 16px;
+}
+
+.non_statistics2{
+    // border: 2px solid #537513;
+    width: auto;
+    height: 50%;
+}
+
+
+
+
+
+.hot_key2{
+    border: 2px solid rgb(15, 214, 98);
+    width: 419px;
+    height: 300px;
+    display: inline-block;
+}
+
+.hot_key3{
+    border: 2px solid rgb(229, 233, 13);
+    width: 419px;
+    height: 300px;
+    display: inline-block;
+}
+
+
+
+
+

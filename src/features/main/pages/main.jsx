@@ -6,6 +6,7 @@ import { PhoneOutlined,MailOutlined, FacebookOutlined, InstagramOutlined, Twitte
 import BannerHouse from "../BannerHouse";
 import Searching from "../Searching";
 import Login from "../Login";
+import Hot_key from "../Hot_key";
 const { Header, Content, Footer } = Layout;
 
 function Main() {
@@ -29,13 +30,18 @@ function Main() {
                             </div>
                         </div>
                     </Header>
-                    <Login />
+        
                      
                        {/* {Components must start uppercase, otherwise React thinks that 
                         they are simple HTML tags and not components. So you must change player to Player everywhere} */}
                 
 
-                    
+                    <Content className="content">
+                        <BannerHouse /> 
+                          <Searching />
+                            <Hot_key />
+                          {/* <Login /> */}
+                      </Content>
 
                           
                     <Footer className="foot">
