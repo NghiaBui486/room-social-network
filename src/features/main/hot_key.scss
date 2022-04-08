@@ -1,19 +1,19 @@
 .hot_key_word{
-    border: 2px solid black;
+    border: 2px solid #757171;
     width: auto;
     height: 300px;
     position: relative;
     bottom: 300px;
-    
+    background-color: white;
 }
 
 .hot_key1{
     // border: 2px solid rgb(214, 15, 15);
     width: 419px;
-    height: 300px;
+    height: 295px;
     display: inline-block;
     position: relative;
-    bottom: 58px;
+    bottom: 150px;
 }
 
 .hot_title1{
@@ -28,7 +28,8 @@
     height: 80px;
     padding: 20px;
     display: inline-block;
-    
+    bottom: 10px;
+    position: relative;
 }
 
 .title1{
@@ -36,7 +37,7 @@
     width: 321px;
     height: 80px; 
     display: inline-block;
-    padding-top: 36px;
+    padding-top: 40px;
 }
 .statistics{
    
@@ -106,21 +107,144 @@
 }
 
 
-
-
-
 .hot_key2{
-    border: 2px solid rgb(15, 214, 98);
+    // border: 2px solid rgb(15, 214, 98);
     width: 419px;
-    height: 300px;
+    height: 295px;
     display: inline-block;
+    position: relative;
+   bottom: 150px;
 }
 
+.room_sharing{
+    //  border: 2px solid rgb(229, 233, 13);
+     width: auto;
+     height: 80px;
+}
+
+.ic_share{
+    //  border: 2px solid rgb(51, 42, 167);
+     width: 90px;
+     height: 80px;
+     padding: 20px;
+     display: inline-block;
+    position: relative;
+    bottom: 20px;
+}
+
+.title_sharing{
+    //  border: 2px solid rgb(82, 167, 42);
+     width: 321px;
+     height: 80px; 
+     display: inline-block;
+     padding-top: 40px;
+}
+
+.statistics_room_sharing{
+    //   border: 2px solid rgb(51, 42, 167);
+      width: auto;
+      height: 215px;
+}
+
+.non_statistics_room_sharing{
+    border: 2px solid #333333;
+    width: auto;
+    height: 200px;
+    margin: 5px;  
+}
+
+.non_statistics_room_sharing1{
+    width: auto;
+    height: 50%;
+    // border: 2px solid #db1ca2;
+}
+
+.statistics_ic1_roomshare{
+    //  border: 2px solid #f0ba0b;
+     width: 30%;
+     height: 94px;
+     padding: 20px;
+     text-align: center;
+     display: inline-block;
+     position: relative;
+     bottom: 0px;
+}
+
+.statistics_data_roomshare{
+    //    border: 2px solid #b997b4;
+       width: 70%;
+       height: 94px;
+       padding: 20px;
+       display: inline-block;
+       position: relative;
+       bottom: 16px;
+}
+
+.non_statistics_roomShare2{
+    //    border: 2px solid #537513;
+       width: auto;
+       height: 50%;
+}
+
+.statistics_roomshare_ic2{
+        // border: 2px solid #f0ba0b;
+        width: 30%;
+        height: 94px;
+        padding: 20px;
+        text-align: center;
+        display: inline-block;
+        position: relative;
+        bottom: 0px;
+}
+
+.statistics_data_roomsharing2{
+        // border: 2px solid #f00bca;
+        width: 70%;
+        height: 94px;
+        padding: 20px;
+        display: inline-block;
+        position: relative;
+        bottom: 16px;
+}
+
+
+
+
+
+
+
 .hot_key3{
-    border: 2px solid rgb(229, 233, 13);
-    width: 419px;
-    height: 300px;
+    border: 2px solid #333333;
+    width: 418px;
+    height: 295px;
     display: inline-block;
+   position: relative;
+     bottom: 0px;
+     
+}
+
+.key_title{
+    // border: 2px solid rgb(13, 233, 97);
+    width: 415px;
+    height: 50px;
+    display: inline-block;
+    position: relative;
+    background-color: #0f4d92;
+    border: 2px solid #0f4d92
+}
+.key_content{
+    // border: 2px solid rgb(13, 17, 233);
+    width: 410px;
+    height: 240px;
+    display: inline-block;
+    position: relative;
+    left: 2px;
+    margin-bottom: 100px;
+}
+
+.btn_hot{
+    float: left;
+    padding: 20px;
 }
 
 
