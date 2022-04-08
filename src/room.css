@@ -1,0 +1,18 @@
+.site-room{
+    border: 2px double #49e99c;
+    border-radius: 10px;
+    font-weight: bold;
+    
+  }
+  .room-search{
+    margin-left: 40px ;
+    margin-right: 40px ;
+    padding: 10px;
+  }
+  
+  
+  .gutter-row{
+    font-size: 20px;
+    font-weight: bold;
+    color: brown;
+  }
