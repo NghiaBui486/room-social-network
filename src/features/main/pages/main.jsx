@@ -7,6 +7,7 @@ import BannerHouse from "../BannerHouse";
 import Searching from "../Searching";
 import Login from "../Login";
 import Hot_key from "../Hot_key";
+import NewPost from "../NewPost";
 const { Header, Content, Footer } = Layout;
 
 function Main() {
@@ -40,6 +41,7 @@ function Main() {
                         <BannerHouse /> 
                           <Searching />
                             <Hot_key />
+                              <NewPost />
                           {/* <Login /> */}
                       </Content>
 
