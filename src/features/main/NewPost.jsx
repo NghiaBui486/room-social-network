@@ -2,7 +2,11 @@ import React from "react";
 import './newPost.scss';
 import { Card, Rate } from 'antd';
 import { StarOutlined } from '@ant-design/icons';
-import {  } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar, faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { Button } from 'antd';
+import './images';
+import images from "./images";
 const { Meta } = Card;
 
 class NewPost extends React.Component{
@@ -12,24 +16,283 @@ class NewPost extends React.Component{
                 <h3 style={{fontWeight:"bold",fontFamily:"Times new romans",fontSize:25,color:"#660000"}}>Tin mới đăng</h3>
             </div>
             <div className="contain_newsPost">
-            <Card
-                hoverable
-                style={{ width: 240,height:400,border: "2px solid grey" }}
-                cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
-            >
-                    <Meta title="Phòng trọ giá rẻ" description="" />
-                    <Meta title="Diện tích: 18m2" description="" />
-                    <div className="Rate">
-                        <Meta title="Đánh giá: " description="" />
-                    </div>
-                  
-                    <i class="fa-solid fa-star" style={{color:"black",fontSize:"30px"}}></i>
-                   
+                <div className ="container_Card">
+                    <Card
+                        hoverable
+                        style={{ width: 240,height:390,border: "2px solid grey" }}
+                        cover={<img alt="example" src={images.tro1} />}
+                    >           
                         
-                       
-                  
-                   
-            </Card>
+                           <h4 style={{color:"red",fontSize:15,fontWeight:"bold"}}>PHÒNG TRỌ GIÁ RẺ</h4>
+                            <Meta title="Diện tích: 18m2" description="" />
+                            <div className="container_evaluate">
+                                <div className="evaluate">
+                                    <Meta title="Đánh giá: " description="" />
+                                </div>
+
+                                <div className="evaluate">
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                </div>
+                            </div>
+                            
+                            <div className="address">
+                                <FontAwesomeIcon id ="add" icon={faLocationDot} style={{color:"orange"}} />
+                                <Meta id ="add_name" title="Quận 12 - Hồ Chí Minh" description="" />
+                            </div>
+                            <div className="btn_Price">
+                                <Button type="dashed" style={{backgroundColor:"green",color:"white",paddingRight:60,textAlign:"center",marginBottom:100}}>1.200.000 đ/tháng</Button>
+                            </div>
+                            
+                        </Card>
+            </div>
+
+
+            <div className ="container_Card">
+                    <Card
+                        hoverable
+                        style={{ width: 240,height:390,border: "2px solid grey" }}
+                        cover={<img alt="example" src={images.tro2} />}
+                    >           
+                        
+                           <h4 style={{color:"red",fontSize:15,fontWeight:"bold"}}>PHÒNG TRỌ GIÁ RẺ</h4>
+                            <Meta title="Diện tích: 18m2" description="" />
+                            <div className="container_evaluate">
+                                <div className="evaluate">
+                                    <Meta title="Đánh giá: " description="" />
+                                </div>
+
+                                <div className="evaluate">
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                </div>
+                            </div>
+                            
+                            <div className="address">
+                                <FontAwesomeIcon id ="add" icon={faLocationDot} style={{color:"orange"}} />
+                                <Meta id ="add_name" title="Quận 12 - Hồ Chí Minh" description="" />
+                            </div>
+                            <div className="btn_Price">
+                                <Button type="dashed" style={{backgroundColor:"green",color:"white",paddingRight:60,textAlign:"center",marginBottom:100}}>1.200.000 đ/tháng</Button>
+                            </div>
+                            
+                        </Card>
+            </div>
+
+            <div className ="container_Card">
+                    <Card
+                        hoverable
+                        style={{ width: 240,height:390,border: "2px solid grey" }}
+                        cover={<img alt="example" src={images.tro3} />}
+                    >           
+                        
+                           <h4 style={{color:"red",fontSize:15,fontWeight:"bold"}}>PHÒNG TRỌ GIÁ RẺ</h4>
+                            <Meta title="Diện tích: 18m2" description="" />
+                            <div className="container_evaluate">
+                                <div className="evaluate">
+                                    <Meta title="Đánh giá: " description="" />
+                                </div>
+
+                                <div className="evaluate">
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                </div>
+                            </div>
+                            
+                            <div className="address">
+                                <FontAwesomeIcon id ="add" icon={faLocationDot} style={{color:"orange"}} />
+                                <Meta id ="add_name" title="Quận 12 - Hồ Chí Minh" description="" />
+                            </div>
+                            <div className="btn_Price">
+                                <Button type="dashed" style={{backgroundColor:"green",color:"white",paddingRight:60,textAlign:"center",marginBottom:100}}>1.200.000 đ/tháng</Button>
+                            </div>
+                            
+                        </Card>
+            </div>
+
+            <div className ="container_Card">
+                    <Card
+                        hoverable
+                        style={{ width: 240,height:390,border: "2px solid grey" }}
+                        cover={<img alt="example" src={images.tro4} />}
+                    >           
+                        
+                           <h4 style={{color:"red",fontSize:15,fontWeight:"bold"}}>PHÒNG TRỌ GIÁ RẺ</h4>
+                            <Meta title="Diện tích: 18m2" description="" />
+                            <div className="container_evaluate">
+                                <div className="evaluate">
+                                    <Meta title="Đánh giá: " description="" />
+                                </div>
+
+                                <div className="evaluate">
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                </div>
+                            </div>
+                            
+                            <div className="address">
+                                <FontAwesomeIcon id ="add" icon={faLocationDot} style={{color:"orange"}} />
+                                <Meta id ="add_name" title="Quận 12 - Hồ Chí Minh" description="" />
+                            </div>
+                            <div className="btn_Price">
+                                <Button type="dashed" style={{backgroundColor:"green",color:"white",paddingRight:60,textAlign:"center",marginBottom:100}}>1.200.000 đ/tháng</Button>
+                            </div>
+                            
+                        </Card>
+            </div>
+
+            <div className ="container_Card">
+                    <Card
+                        hoverable
+                        style={{ width: 240,height:390,border: "2px solid grey" }}
+                        cover={<img alt="example" src={images.tro4} />}
+                    >           
+                        
+                           <h4 style={{color:"red",fontSize:15,fontWeight:"bold"}}>PHÒNG TRỌ GIÁ RẺ</h4>
+                            <Meta title="Diện tích: 18m2" description="" />
+                            <div className="container_evaluate">
+                                <div className="evaluate">
+                                    <Meta title="Đánh giá: " description="" />
+                                </div>
+
+                                <div className="evaluate">
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                </div>
+                            </div>
+                            
+                            <div className="address">
+                                <FontAwesomeIcon id ="add" icon={faLocationDot} style={{color:"orange"}} />
+                                <Meta id ="add_name" title="Quận 12 - Hồ Chí Minh" description="" />
+                            </div>
+                            <div className="btn_Price">
+                                <Button type="dashed" style={{backgroundColor:"green",color:"white",paddingRight:60,textAlign:"center",marginBottom:100}}>1.200.000 đ/tháng</Button>
+                            </div>
+                            
+                        </Card>
+            </div>
+
+            <div className ="container_Card">
+                    <Card
+                        hoverable
+                        style={{ width: 240,height:390,border: "2px solid grey" }}
+                        cover={<img alt="example" src={images.tro1} />}
+                    >           
+                        
+                           <h4 style={{color:"red",fontSize:15,fontWeight:"bold"}}>PHÒNG TRỌ GIÁ RẺ</h4>
+                            <Meta title="Diện tích: 18m2" description="" />
+                            <div className="container_evaluate">
+                                <div className="evaluate">
+                                    <Meta title="Đánh giá: " description="" />
+                                </div>
+
+                                <div className="evaluate">
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                </div>
+                            </div>
+                            
+                            <div className="address">
+                                <FontAwesomeIcon id ="add" icon={faLocationDot} style={{color:"orange"}} />
+                                <Meta id ="add_name" title="Quận 12 - Hồ Chí Minh" description="" />
+                            </div>
+                            <div className="btn_Price">
+                                <Button type="dashed" style={{backgroundColor:"green",color:"white",paddingRight:60,textAlign:"center",marginBottom:100}}>1.200.000 đ/tháng</Button>
+                            </div>
+                            
+                        </Card>
+            </div>
+
+            <div className ="container_Card">
+                    <Card
+                        hoverable
+                        style={{ width: 240,height:390,border: "2px solid grey" }}
+                        cover={<img alt="example" src={images.tro5} />}
+                    >           
+                        
+                           <h4 style={{color:"red",fontSize:15,fontWeight:"bold"}}>PHÒNG TRỌ GIÁ RẺ</h4>
+                            <Meta title="Diện tích: 18m2" description="" />
+                            <div className="container_evaluate">
+                                <div className="evaluate">
+                                    <Meta title="Đánh giá: " description="" />
+                                </div>
+
+                                <div className="evaluate">
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                </div>
+                            </div>
+                            
+                            <div className="address">
+                                <FontAwesomeIcon id ="add" icon={faLocationDot} style={{color:"orange"}} />
+                                <Meta id ="add_name" title="Quận 12 - Hồ Chí Minh" description="" />
+                            </div>
+                            <div className="btn_Price">
+                                <Button type="dashed" style={{backgroundColor:"green",color:"white",paddingRight:60,textAlign:"center",marginBottom:100}}>1.200.000 đ/tháng</Button>
+                            </div>
+                            
+                        </Card>
+            </div>
+
+            <div className ="container_Card">
+                    <Card
+                        hoverable
+                        style={{ width: 240,height:390,border: "2px solid grey" }}
+                        cover={<img alt="example" src={images.tro6} />}
+                    >           
+                        
+                           <h4 style={{color:"red",fontSize:15,fontWeight:"bold"}}>PHÒNG TRỌ GIÁ RẺ</h4>
+                            <Meta title="Diện tích: 18m2" description="" />
+                            <div className="container_evaluate">
+                                <div className="evaluate">
+                                    <Meta title="Đánh giá: " description="" />
+                                </div>
+
+                                <div className="evaluate">
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                    <FontAwesomeIcon id ="star_eva" icon={faStar} style={{color:"yellow",position:"relative",bottom:22,left:75}}/>
+                                </div>
+                            </div>
+                            
+                            <div className="address">
+                                <FontAwesomeIcon id ="add" icon={faLocationDot} style={{color:"orange"}} />
+                                <Meta id ="add_name" title="Quận 12 - Hồ Chí Minh" description="" />
+                            </div>
+                            <div className="btn_Price">
+                                <Button type="dashed" style={{backgroundColor:"green",color:"white",paddingRight:60,textAlign:"center",marginBottom:100}}>1.200.000 đ/tháng</Button>
+                            </div>
+                            
+                        </Card>
+            </div>
+            
+            <div className="btn_SeeAll">
+            <Button danger >Xem tất cả</Button>
+            </div>
+            
             </div>
         </div>);
     }
