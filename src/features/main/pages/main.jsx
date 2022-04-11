@@ -8,6 +8,7 @@ import Searching from "../Searching";
 import Login from "../Login";
 import Hot_key from "../Hot_key";
 import NewPost from "../NewPost";
+import Room_Stay_Provinces from "../Room_Stay_Provinces";
 const { Header, Content, Footer } = Layout;
 
 function Main() {
@@ -42,6 +43,7 @@ function Main() {
                           <Searching />
                             <Hot_key />
                               <NewPost />
+                              <Room_Stay_Provinces />
                           {/* <Login /> */}
                       </Content>
 

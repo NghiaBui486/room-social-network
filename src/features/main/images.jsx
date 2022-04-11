@@ -6,5 +6,7 @@ const images = {
     tro4: require('../main/Img/tro4.jpg'),
     tro5: require('../main/Img/tro5.jpg'), 
     tro6: require('../main/Img/tro6.jpg'),
+    HaNoi: require('../main/Img/Hanoi.jpg'),
+    LamDong: require('../main/Img/LamDong.jpg')
 }
 export default images;

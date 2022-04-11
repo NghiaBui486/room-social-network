@@ -1,7 +1,7 @@
 .Contain_Post{
     border: 2px solid black;
     width: auto;
-    height: 2000px;
+    height: 1680px;
     position: relative;
     bottom: 300px;
 }
@@ -13,13 +13,13 @@
 }
 
 .contain_newsPost{
-    border: 2px solid rgb(4, 206, 14);
+    // border: 2px solid rgb(4, 206, 14);
     width: auto;
-    height: 958px;
+    height: 1100px;
 }
 
 .container_Card{
-    border: 2px solid rgb(206, 95, 4);
+    // border: 2px solid rgb(206, 95, 4);
     width: auto;
     height: 448px;
     display: inline-block;
@@ -90,9 +90,23 @@
 }
 
 .btn_SeeAll{
-    border: 2px solid rgb(228, 20, 20);
-    width: 500px;
+    // border: 2px solid rgb(228, 20, 20);
+    // width: auto;
     height: 50px;
     position: relative;
     top:1000px;
+}
+
+.hot_news{
+    border: 2px solid rgb(247, 171, 7);
+    width: auto;
+    height: 536px;
+}
+
+.hotCard{
+    // border: 2px solid rgb(47, 247, 7);
+    width: auto;
+    height: 495px;
+    padding: 20px;
+    padding-left: 20px;
 }

@@ -1,0 +1,160 @@
+.container_roomProvinces{
+    border: 2px solid rgb(55, 29, 201);
+    width: auto;
+    height: 500px;
+    position: relative;
+    bottom:300px
+}
+
+.province_title{
+    // border: 2px solid rgb(29, 201, 43);
+    width: auto;
+    height: 100px;
+}
+
+.bigTitle{
+    // border: 2px solid rgb(66, 29, 201);
+    width: auto;
+    height: 50%;
+    text-align: center;
+}
+
+.nonTitle{
+    text-align: center;
+}
+
+.detail_roomProvinces{
+    border: 2px solid rgb(243, 122, 9);
+    width: auto;
+    height: 400px;
+   
+}
+
+.detail{
+    border: 2px solid rgb(9, 216, 243);
+    width: 258px;
+    height: 380px;
+    float:left;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.detail_1{
+    border: 2px solid rgb(28, 243, 9);
+    width: 254px;
+    height: 375px;
+    background-image: url('../main/Img/Hanoi.jpg');
+    background-repeat: no-repeat;
+    background-size: 300px 400px;
+}
+  
+.detailOfPlace{
+    // border: 2px solid rgb(28, 243, 9);
+    width: 254px;
+    height: 30px;
+    margin-top: 300px;
+    padding-left: 160px;
+}
+  
+  .overlay1 {
+    position: absolute; 
+    bottom: 170px; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 250px;
+    height: 50px;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    padding-left: 10px;
+  }
+  
+.detail_1:hover .overlay1 {
+    opacity: 1;
+  }
+
+.f_img{
+    border: 2px solid rgb(60, 9, 243);
+    width: 252px;
+    height: 48%;
+    background-image: url('../main/Img/LamDong.jpg');
+    background-repeat: no-repeat;
+    background-size: 250px 300px;
+  
+}
+
+.detailOfPlace2{
+    // border: 2px solid rgb(28, 243, 9);
+    width: 254px;
+    height: 30px;
+    margin-top: 110px;
+    padding-left: 160px;
+}
+
+.overlay2_1 {
+    position: absolute; 
+    top:170px; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 250px;
+    height: 50px;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    padding-left: 10px;
+  }
+  
+.f_img:hover .overlay2_1 {
+    opacity: 1;
+  }
+
+.mid_img{
+    // border: 2px solid rgb(192, 243, 9);
+    width: 252px;
+    height: 4%;
+}
+.s_img{
+    border: 2px solid rgb(243, 9, 146);
+    width: 252px;
+    height: 48%;
+    background-image: url('../main/Img/KhanhHoa.jpg');
+    background-repeat: no-repeat;
+    background-size: 250px 300px;
+}
+
+.detailOfPlace2_2{
+    // border: 2px solid rgb(9, 64, 243);
+    width: 252px;
+    height: 30px;
+    position: absolute;
+    bottom: 28px;
+    padding-left: 160px;
+}
+
+.overlay2_2 {
+    position: absolute; 
+    bottom:100px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 250px;
+    height: 50px;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    padding-left: 10px;
+  }
+.s_img .overlay2_2{
+    opacity: 1;
+}
