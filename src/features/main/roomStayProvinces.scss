@@ -1,9 +1,10 @@
 .container_roomProvinces{
-    border: 2px solid rgb(55, 29, 201);
+    // border: 2px solid rgb(55, 29, 201);
     width: auto;
     height: 500px;
     position: relative;
-    bottom:300px
+    bottom:300px;
+    padding-left: 10px;
 }
 
 .province_title{
@@ -15,7 +16,7 @@
 .bigTitle{
     // border: 2px solid rgb(66, 29, 201);
     width: auto;
-    height: 50%;
+    height: 30%;
     text-align: center;
 }
 
@@ -24,24 +25,26 @@
 }
 
 .detail_roomProvinces{
-    border: 2px solid rgb(243, 122, 9);
+    // border: 2px solid rgb(243, 9, 48);
     width: auto;
-    height: 400px;
+    height: 396px;
    
 }
 
 .detail{
-    border: 2px solid rgb(9, 216, 243);
-    width: 258px;
+    // border: 2px solid rgb(9, 216, 243);
+    width: 240px;
     height: 380px;
     float:left;
     display: inline-block;
     margin-left: 10px;
+    margin: 5px;
 }
 
+
 .detail_1{
-    border: 2px solid rgb(28, 243, 9);
-    width: 254px;
+    // border: 2px solid rgb(28, 243, 9);
+    width: auto;
     height: 375px;
     background-image: url('../main/Img/Hanoi.jpg');
     background-repeat: no-repeat;
@@ -62,7 +65,7 @@
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5); /* Black see-through */
     color: #f1f1f1; 
-    width: 250px;
+    width: 232px;
     height: 50px;
     transition: .5s ease;
     opacity:0;
@@ -78,8 +81,8 @@
   }
 
 .f_img{
-    border: 2px solid rgb(60, 9, 243);
-    width: 252px;
+    // border: 2px solid rgb(60, 9, 243);
+    width: 235px;
     height: 48%;
     background-image: url('../main/Img/LamDong.jpg');
     background-repeat: no-repeat;
@@ -96,12 +99,13 @@
 }
 
 .overlay2_1 {
+    // border: 2px solid red;
     position: absolute; 
     top:170px; 
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5); /* Black see-through */
     color: #f1f1f1; 
-    width: 250px;
+    width: 230px;
     height: 50px;
     transition: .5s ease;
     opacity:0;
@@ -119,11 +123,11 @@
 .mid_img{
     // border: 2px solid rgb(192, 243, 9);
     width: 252px;
-    height: 4%;
+    height: 3%;
 }
 .s_img{
-    border: 2px solid rgb(243, 9, 146);
-    width: 252px;
+    // border: 2px solid rgb(243, 9, 146);
+    width: 235px;
     height: 48%;
     background-image: url('../main/Img/KhanhHoa.jpg');
     background-repeat: no-repeat;
@@ -140,12 +144,85 @@
 }
 
 .overlay2_2 {
+    // border: 2px solid rgb(14, 50, 211);
     position: absolute; 
-    bottom:100px;
+    top:380px; 
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5); /* Black see-through */
     color: #f1f1f1; 
-    width: 250px;
+    width: 230px;
+    height: 50px;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    padding-left: 10px;     
+  }
+
+.s_img:hover .overlay2_2 {
+    opacity: 1;
+  }
+
+  //detail3
+  .detail_3{
+    // border: 2px solid rgb(28, 243, 9);
+    width: auto;
+    height: 375px;
+    background-image: url('../main/Img/BInhDuong.jpg');
+    background-repeat: no-repeat;
+    background-size: 300px 400px;
+  }
+  .overlay3 {
+    // border: 2px solid rgb(37, 211, 14);
+    position: absolute; 
+    top:280px; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 235px;
+    height: 50px;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    padding-left: 10px;     
+  }
+
+.detail_3:hover .overlay3 {
+    opacity: 1;
+  }
+
+
+//detail4
+.f4_img{
+    // border: 2px solid rgb(60, 9, 243);
+    width: 235px;
+    height: 48%;
+    background-image: url('../main/Img/HaiPhong.jpeg');
+    background-repeat: no-repeat;
+    background-size: 250px 200px;
+}
+
+.detailOfPlace2{
+    // border: 2px solid rgb(28, 243, 9);
+    width: 254px;
+    height: 30px;
+    margin-top: 110px;
+    padding-left: 160px;
+}
+
+.overlay2_1 {
+    // border: 2px solid red;
+    position: absolute; 
+    top:170px; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 230px;
     height: 50px;
     transition: .5s ease;
     opacity:0;
@@ -155,6 +232,35 @@
     text-align: center;
     padding-left: 10px;
   }
-.s_img .overlay2_2{
+  
+.f4_img:hover .overlay2_1 {
     opacity: 1;
+  }
+
+.s4_img{
+    // border: 2px solid rgb(243, 9, 146);
+    width: 235px;
+    height: 48%;
+    background-image: url('../main/Img/baRia_VungTau.jpg');
+    background-repeat: no-repeat;
+    background-size: 250px 200px;
 }
+
+.s4_img:hover .overlay2_2 {
+    opacity: 1;
+  }
+  
+//detail 5
+.detail_5{
+    // border: 2px solid rgb(28, 243, 9);
+    width: auto;
+    height: 375px;
+    background-image: url('../main/Img/Saigon.jpg');
+    background-repeat: no-repeat;
+    background-size: 300px 380px;
+}
+
+.detail_5:hover .overlay1 {
+    opacity: 1;
+  }
+

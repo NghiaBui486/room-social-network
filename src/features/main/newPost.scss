@@ -1,5 +1,5 @@
 .Contain_Post{
-    border: 2px solid black;
+    // border: 2px solid black;
     width: auto;
     height: 1680px;
     position: relative;
@@ -16,6 +16,7 @@
     // border: 2px solid rgb(4, 206, 14);
     width: auto;
     height: 1100px;
+    padding: 50px;
 }
 
 .container_Card{
@@ -25,7 +26,7 @@
     display: inline-block;
     float:left;
     padding: 20px;
-    margin: 20px;
+    margin: 2px;
 }
 
 .container_evaluate{
@@ -98,9 +99,10 @@
 }
 
 .hot_news{
-    border: 2px solid rgb(247, 171, 7);
+    // border: 2px solid rgb(247, 171, 7);
     width: auto;
     height: 536px;
+    padding-left: 20px;
 }
 
 .hotCard{
