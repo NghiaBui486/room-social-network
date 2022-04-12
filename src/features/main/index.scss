@@ -5,10 +5,9 @@
 .head{
     background-color: #0f4d92;
     height: 100px;
-    position: fixed; //Ghim header khi scroll
+    position: fixed ; //Ghim header khi scroll
     width: 100%;
-    
-    
+    z-index: 1;
 }
 /*header*/
 
@@ -60,6 +59,7 @@ li:hover{
 .content{
     // background-color: rgb(202, 86, 86);
     height: 2990px;
+    background-color: white;
 }
 
 

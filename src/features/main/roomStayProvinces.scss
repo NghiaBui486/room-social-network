@@ -59,22 +59,7 @@
     padding-left: 160px;
 }
   
-  .overlay1 {
-    position: absolute; 
-    bottom: 170px; 
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
-    color: #f1f1f1; 
-    width: 232px;
-    height: 50px;
-    transition: .5s ease;
-    opacity:0;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-    padding-left: 10px;
-  }
+
   
 .detail_1:hover .overlay1 {
     opacity: 1;
@@ -98,14 +83,65 @@
     padding-left: 160px;
 }
 
-.overlay2_1 {
+//overlay
+.overlay1 {
+  position: absolute; 
+  bottom: 170px; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 240px;
+  height: 50px;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  padding-left: 10px;
+}
+  .overlay2_2 {
+    // border: 2px solid rgb(14, 50, 211);
+    position: absolute; 
+    top:380px; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 235px;
+    height: 50px;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    padding-left: 10px;     
+  }
+  .overlay3 {
+    // border: 2px solid rgb(37, 211, 14);
+    position: absolute; 
+    top:280px; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 240px;
+    height: 50px;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    padding-left: 10px;     
+  }
+  .overlay2_1 {
     // border: 2px solid red;
     position: absolute; 
     top:170px; 
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5); /* Black see-through */
     color: #f1f1f1; 
-    width: 230px;
+    width: 235px;
     height: 50px;
     transition: .5s ease;
     opacity:0;
@@ -115,7 +151,7 @@
     text-align: center;
     padding-left: 10px;
   }
-  
+
 .f_img:hover .overlay2_1 {
     opacity: 1;
   }
@@ -143,23 +179,7 @@
     padding-left: 160px;
 }
 
-.overlay2_2 {
-    // border: 2px solid rgb(14, 50, 211);
-    position: absolute; 
-    top:380px; 
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
-    color: #f1f1f1; 
-    width: 230px;
-    height: 50px;
-    transition: .5s ease;
-    opacity:0;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-    padding-left: 10px;     
-  }
+
 
 .s_img:hover .overlay2_2 {
     opacity: 1;
@@ -174,23 +194,7 @@
     background-repeat: no-repeat;
     background-size: 300px 400px;
   }
-  .overlay3 {
-    // border: 2px solid rgb(37, 211, 14);
-    position: absolute; 
-    top:280px; 
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
-    color: #f1f1f1; 
-    width: 235px;
-    height: 50px;
-    transition: .5s ease;
-    opacity:0;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-    padding-left: 10px;     
-  }
+ 
 
 .detail_3:hover .overlay3 {
     opacity: 1;
@@ -215,23 +219,7 @@
     padding-left: 160px;
 }
 
-.overlay2_1 {
-    // border: 2px solid red;
-    position: absolute; 
-    top:170px; 
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
-    color: #f1f1f1; 
-    width: 230px;
-    height: 50px;
-    transition: .5s ease;
-    opacity:0;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-    padding-left: 10px;
-  }
+
   
 .f4_img:hover .overlay2_1 {
     opacity: 1;
