@@ -1,5 +1,5 @@
 import React from "react";
-import './hot_key.scss';
+import '../scss_UI/hot_key.scss';
 import { Card, Col, Row, Button } from 'antd';
 import 'antd/dist/antd.css';
 import BarChartOutlined from '@ant-design/icons/BarChartOutlined';

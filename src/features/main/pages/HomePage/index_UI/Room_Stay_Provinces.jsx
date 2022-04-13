@@ -1,9 +1,8 @@
 import React from 'react';
-import '../main/roomStayProvinces.scss';
-import images from "./images";
+import images from "../../../images";
 import { Image } from 'antd';
 import { Typography} from 'antd';
-import './roomStayProvinces.scss';
+import '../scss_UI/roomStayProvinces.scss';
 const { Link } = Typography;
 class Room_Stay_Provinces extends React.Component{
     render(){

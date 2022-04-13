@@ -1,0 +1,32 @@
+.container_List{
+    border: 2px solid black;
+    height: 3000px;
+    width: auto;
+}
+
+.container_ListRoom{
+    border: 2px solid rgb(233, 11, 11);
+    height: 1000px;
+    width: auto;
+    bottom: 300px;
+    position: relative;
+}
+
+.title_ListRoom{
+    border: 2px solid rgb(72, 194, 82);
+    height: 70px;
+    width: auto;
+    display: flex;
+}
+
+.tittle_left{
+    border: 2px solid rgb(190, 72, 194);
+    height: 65px;
+    width: 50%;
+}
+
+.title_right{
+    border: 2px solid rgb(72, 170, 194);
+    height: 60px;
+    width: 50%;
+}

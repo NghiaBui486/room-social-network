@@ -1,5 +1,5 @@
 import React from "react";
-import './search.scss';
+import '../scss_UI/search.scss';
 import { Select, Typography } from 'antd';
 import 'antd/dist/antd.css';
 import { DatePicker, Space } from 'antd';

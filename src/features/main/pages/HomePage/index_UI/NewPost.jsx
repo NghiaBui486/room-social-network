@@ -1,11 +1,10 @@
 import React from "react";
-import './newPost.scss';
+import '../scss_UI/newPost.scss';
 import { Card} from 'antd';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { Button } from 'antd';
-import './images';
-import images from "./images";
+import images from "../../../images";
 const { Meta } = Card;
 
 class NewPost extends React.Component{
