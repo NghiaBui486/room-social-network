@@ -10,8 +10,7 @@ const { Meta } = Card;
 
 class NewPost extends React.Component{
     render(){
-        return(
-        <div className="Contain_Post">
+        return(<div className="Contain_Post">
             <div className="tittle_New">
                 <h3 style={{fontWeight:"bold",fontFamily:"Times new romans",fontSize:25,color:"#660000"}}>Tin mới đăng</h3>
             </div>

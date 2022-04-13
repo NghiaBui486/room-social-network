@@ -7,7 +7,8 @@
     height: 100px;
     position: fixed ; //Ghim header khi scroll
     width: 100%;
-    z-index: 1;
+    z-index: 1;//set chỉ số này để class này có thể đè lên css khác
+
 }
 /*header*/
 
@@ -35,14 +36,15 @@ li{
     height: 40px;
     float: right;
     position: relative;
-    bottom: 170px;
-    left: 480px;
+    bottom: 130px;
+    left: 490px;
     padding: 5px;
 }
 .right_head button{
     float: left;
     position: relative;
     left: 40px;
+    bottom: 18px;
 }
 .right_head li{
     padding-left: 10;
@@ -60,6 +62,13 @@ li:hover{
     // background-color: rgb(202, 86, 86);
     height: 2990px;
     background-color: white;
+      /* media queries */
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+  @media (max-width: 400px) {
+    text-align: left;
+  }
 }
 
 
