@@ -8,27 +8,26 @@ import NewPost from "../pages/HomePage/index_UI/NewPost";
 import Room_Stay_Provinces from "./HomePage/index_UI/Room_Stay_Provinces";
 import Head from "../../../components/Hearder";
 import Foot from "../../../components/Footer";
-import Detail from "../pages/ListOfRooms/index_List/List_Room"
 const { Header, Content, Footer } = Layout;
 
 function Main() {
     return (
-              //  <Layout style={{color: 'blue'}}>
-              //     <Head />
-              //          {/* {Components must start uppercase, otherwise React thinks that 
-              //           they are simple HTML tags and not components. So you must change player to Player everywhere} */}
-              //       <Content className="content">
-              //             <BannerHouse /> 
-              //             <Searching />
-              //               <Hot_key />
-              //                 <NewPost />
-              //                   <Room_Stay_Provinces />
-              //         </Content> 
-              //       <Foot />
-              //   </Layout>
+               <Layout style={{color: 'blue'}}>
+                  <Head />
+                       {/* {Components must start uppercase, otherwise React thinks that 
+                        they are simple HTML tags and not components. So you must change player to Player everywhere} */}
+                    <Content className="content">
+                          <BannerHouse /> 
+                          <Searching />
+                            <Hot_key />
+                              <NewPost />
+                                <Room_Stay_Provinces />
+                      </Content> 
+                    <Foot />
+                </Layout>
                 
-              <Detail >
-              </Detail>
+              // <Detail >
+              // </Detail>
     );
   }
 

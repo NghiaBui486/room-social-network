@@ -2,7 +2,7 @@ import React from "react";
 import '../scssList/listRoom.scss';
 import { Select} from 'antd';
 import Head from "../../../../../components/Hearder";
-import Feat from "../../../../../components/Footer";
+import Feet from "../../../../../components/Footer";
 import BannerHouse from "../../HomePage/index_UI/BannerHouse";
 import Searching from "../../HomePage/index_UI/Searching";
 import { Card} from 'antd';
@@ -28,12 +28,17 @@ class List_Room extends React.Component{
       }
     render(){
         
-        return (<div className="container_List">
-                    <Head />
-                        <BannerHouse />
-                            <div style={{marginTop:50}}>
+        return (
+                 <>
+                     <Head />
+                     <BannerHouse />
+                     <div style={{marginTop:50}}>
                                 <Searching/>
-                            </div>
+                    </div>
+                 <div className="container_List">
+                   
+                        
+                            
                             <div className="container_ListRoom">
                                 <div className="title_ListRoom">
                                     <div className="tittle_left">
@@ -619,13 +624,11 @@ class List_Room extends React.Component{
                                     />
                                </div>
                                
-                        </div>
-                        
-                        <Feat  style={{marginBottom:300}}/>
-
-                                  
-                            
+                        </div>   
+                       
                  </div>
+                 <Feet  style={{position:"relative",marginBottom:500,with:700}}/>
+                 </>
                  );
     }
 }

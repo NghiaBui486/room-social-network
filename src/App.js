@@ -7,7 +7,7 @@ import NotFound from "./components/not-found";
 
 //Lazy loading
 const HomePage = React.lazy(() => import("./features/main"));
-
+const Room = React.lazy(() => import("./features/main/pages/ListOfRooms/index_List/List_Room"));
 function App() {
   return (
     <div className="app">
@@ -21,7 +21,8 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Navigate to="/room-social-network" replace />} />
-            <Route path="/room-social-network/*" element={<HomePage/>} />
+            <Route path="/room-social-network/*" element={<HomePage />} />
+            <Route path="/room-social-network/list-Room/*" element={<Room />} />
             <Route path="*" element={<NotFound/>} />
           </Routes>
         </BrowserRouter>

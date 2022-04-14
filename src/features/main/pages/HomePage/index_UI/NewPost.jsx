@@ -5,10 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { Button } from 'antd';
 import images from "../../../images";
+import {Link} from 'react-router-dom';
 const { Meta } = Card;
 
 class NewPost extends React.Component{
+
     render(){
+        
         return(<div className="Contain_Post">
             <div className="tittle_New">
                 <h3 style={{fontWeight:"bold",fontFamily:"Times new romans",fontSize:25,color:"#660000"}}>Tin mới đăng</h3>
@@ -289,9 +292,11 @@ class NewPost extends React.Component{
                 
             
                 <div className="btn_SeeAll">
+                    <Link to ="/room-social-network/list-Room">
                     <Button type="primary" danger style={{backgroundColor:"blue",border:"blue", position:"relative",bottom:967,textAlign:"center",left:"45%"}}>
                         Xem tất cả
                     </Button>
+                    </Link>
                 </div>
              </div>
 
