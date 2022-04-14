@@ -6,6 +6,7 @@ import { DatePicker, Space } from 'antd';
 import moment from 'moment';
 import { Button } from 'antd';
 import { SearchOutlined , StarOutlined } from '@ant-design/icons';
+import { Row, Col } from 'antd';
 const { RangePicker } = DatePicker;
 const { Option } = Select;
 const dateFormatList = ['DD/MM/YYYY', 'DD/MM/YY'];
@@ -13,7 +14,9 @@ class Searching extends React.Component {
     render(){
       
         return(
-            <div className="search">
+            <Row>
+                    <Col span={24}>
+                            <div className="search">
                 <div className="title_seatch">
                     <h3 style={{fontFamily:"Times New Roman",color:"#660000",fontSize:20}}>Tìm kiếm nhanh</h3>
                 </div>
@@ -82,7 +85,9 @@ class Searching extends React.Component {
                 
                    
                 </div>
-            </div>
+            </div></Col>
+             </Row>
+            
         );
     }
 }

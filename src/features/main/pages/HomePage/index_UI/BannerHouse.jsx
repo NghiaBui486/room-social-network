@@ -3,6 +3,7 @@ import '../scss_UI/Banner.scss';
 import ReactCaroussel from 'react-caroussel';
 import "react-caroussel/dist/index.css";
 import { Carousel } from 'antd';
+import { Row, Col } from 'antd';
 // class BannerHouse extends React.Component{
   
             
@@ -38,6 +39,9 @@ import { Carousel } from 'antd';
 
 function BannerHouse() {
   return (
+
+        <Row>
+      <Col span={24}>
       <div className='containBanner'>
           <Carousel autoplay>
           <div>
@@ -75,6 +79,9 @@ function BannerHouse() {
           </div>
         </Carousel>
       </div>
+      </Col>
+    </Row>
+     
   );}
 
 export default BannerHouse;

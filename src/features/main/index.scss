@@ -60,15 +60,9 @@ li:hover{
 //content
 .content{
     // background-color: rgb(202, 86, 86);
-    height: 3250px;
+    height: 3000px;
     background-color: white;
       /* media queries */
-  @media (max-width: 767px) {
-    text-align: center;
-  }
-  @media (max-width: 400px) {
-    text-align: left;
-  }
 }
 
 
@@ -165,20 +159,7 @@ img{
     margin-bottom: 500px;
 }
 
-.bar{
-    margin: 20px;
-    width: 15px;
-    height: 15px;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 30px;
-    margin: 10px;
-    cursor: pointer;
-}
 
-.bar:hover{
-    background-color: green;
-    border: 2px solid rgb(212, 221, 226);
-}
 
 #lb1{
     background-color: green;
