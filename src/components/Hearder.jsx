@@ -12,7 +12,7 @@ class Header extends React.Component{
         }
         return (<div className="head">
                      <div class ='left_head'>
-                      <h1 style={{color:'white', textAlign:'center',position:"relative",left:200,paddingLeft:200,height:20,fontFamily:"Times New Roman"}}>CHO THUÊ PHÒNG TRỌ</h1>
+                      <h1 style={{color:'white', textAlign:'center',position:"relative",left:200,paddingLeft:200,height:15,fontFamily:"Times New Roman",paddingTop:15}}>CHO THUÊ PHÒNG TRỌ</h1>
 
                           <h1 onClick={()=>Reload()} style={{ fontSize: '50px',width: 30,position:"relative",bottom:15,cursor:"pointer"} }><Link style={{color:"aqua"}} to='/room-social-network'>TMA</Link></h1>
                             <div> 
