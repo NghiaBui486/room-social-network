@@ -51,7 +51,9 @@ function Login() {
                                     <br></br>
                                     <label>Bạn chưa có tài khoản? </label>
                                     <Link to="../register"> Đăng ký</Link>
+                                    <br></br>
                                 </div>
+                                
                             </form>
                         </div>
                     </div>

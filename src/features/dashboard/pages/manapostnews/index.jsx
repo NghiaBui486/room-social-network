@@ -54,7 +54,9 @@ const Manapostnews = () => {
                                 </tbody>
                             </table>
                         </div>
+                        <br></br>
                 </div>
+                
                                  
      );
 }

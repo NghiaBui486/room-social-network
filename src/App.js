@@ -11,7 +11,6 @@ const HomePage = React.lazy(() => import("./features/main"));
 const DashBoard = React.lazy(() => import("./features/dashboard"));
 const Login = React.lazy(() => import("./components/login"));
 const Register = React.lazy(() => import("./components/register"));
-const News = React.lazy(() => import("./features/dashboard/pages/manapostnews"));
 
 function App() {
   useEffect(()=>{
@@ -43,9 +42,6 @@ function App() {
             <Route path="/" element={<Navigate to="/room-social-network" replace />} />
             <Route path="/room-social-network/*" element={<HomePage/>} />
             <Route path="/admin-management/*" element={<DashBoard/>} />
-            <Route path="/news/*" element={<News/>} />
-            <Route path="/login/*" element={<Login/>} />
-            <Route path="/register/*" element={<Register/>} />
             <Route path="*" element={<NotFound/>} />
           </Routes>
         </BrowserRouter>

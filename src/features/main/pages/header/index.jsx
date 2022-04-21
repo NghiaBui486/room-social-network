@@ -31,7 +31,7 @@ function MainLayout() {
             <Link href="/room-social-network/Login"  title="Đăng nhập" />
             <Link href="/pricing" title="Pricing" />
             <Link href="/contact" title="Contact" />
-            <Link href="/news" title="News" />
+            <Link href="/room-social-network/News" title="News" />
           </Anchor>
         </div>
         <div className="mobileVisible">
