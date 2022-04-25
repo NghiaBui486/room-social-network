@@ -115,7 +115,7 @@ function Post() {
             {
               title: 'Tiêu đề',
               dataIndex: 'tieude',
-              key: 'tieude'
+              key:'tieude'
             },
             Table.EXPAND_COLUMN,
             {
