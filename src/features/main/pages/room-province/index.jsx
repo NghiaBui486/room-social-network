@@ -1,6 +1,5 @@
 import React from 'react';
 import { Row, Col, Image} from 'antd';
-import img1 from "../../../../assets/images/unlimited-features.jpg"
 import '../../index.scss';
 import  { useState } from 'react';
 function  RoomProvince (props){
@@ -12,9 +11,10 @@ function  RoomProvince (props){
     //     height={500}
     //     onClick={() => setVisible(true)}
     //   />
-            return (<>
+            return (
+            <>
                         <Col span={4} >  
-                            <Image title='Hà Nội' style={{height:260}} 
+                            <Image title='Hà Nội' style={{height:302}} 
                             src="https://live.staticflickr.com/3333/3175831395_7361b4851c_n.jpg" />
                             </Col>  
                         <Col span={4} >
@@ -26,21 +26,21 @@ function  RoomProvince (props){
                             </Row>
                         </Col>  
                         <Col span={4} >
-                        <Image title='Bình Dương' style={{height:260}} src="https://th.bing.com/th/id/OIP.tEV6mtiIy-rUebR8u81QWgHaDt?pid=ImgDet&rs=1" />
+                        <Image title='Bình Dương' style={{height:302}} src="https://th.bing.com/th/id/OIP.tEV6mtiIy-rUebR8u81QWgHaDt?pid=ImgDet&rs=1" />
                         </Col>  
                         <Col span={4}>
                             <Row >
-                                <Image style={{height:137}}title='Hải Phòng'  src="https://th.bing.com/th/id/R.89c68b9cabbbbb421ffca19a95ab4521?rik=bFZ4XFDQ%2behldw&pid=ImgRaw&r=0" />
+                                <Image style={{height:140}}title='Hải Phòng'  src="https://th.bing.com/th/id/R.89c68b9cabbbbb421ffca19a95ab4521?rik=bFZ4XFDQ%2behldw&pid=ImgRaw&r=0" />
                             </Row>
-                             <Row >
-                                <Image title ="Bà Rịa - Vũng Tàu"src="https://th.bing.com/th/id/OIP.BP4fYoRguIDh1L-jUZI_lgAAAA?pid=ImgDet&rs=1" />
+                             <Row style={{marginTop:10}}>
+                                <Image style={{height:150}}  title ="Bà Rịa - Vũng Tàu"src="https://th.bing.com/th/id/OIP.BP4fYoRguIDh1L-jUZI_lgAAAA?pid=ImgDet&rs=1" />
                             </Row>
                         </Col>  
                         <Col span={4} >
-                            <Image title='Hồ Chí Minh' style={{height:260}} src="https://live.staticflickr.com/3333/3175831395_7361b4851c_n.jpg" />
+                            <Image title='Hồ Chí Minh' style={{height:302}} src="https://live.staticflickr.com/3333/3175831395_7361b4851c_n.jpg" />
                         </Col>  
                         <Col span={4} >
-                            <Image title='Quy Nhơn City' style={{height:260}} src="https://th.bing.com/th/id/R.1742abadb5bce65a001082cad478882c?rik=9jZni6EFE5wzrw&riu=http%3a%2f%2fwww.vietnamvisa-easy.com%2fblog%2fwp-content%2fuploads%2f2013%2f11%2fQuy-Nhon-travel-vietnam-visa-vietnam-embassy3.jpg&ehk=E5FDHwLUgaue6jlsxK%2fO4iMQYQpAs6J42ftkAACuTvA%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" />
+                            <Image title='Quy Nhơn City' style={{height:302}} src="https://th.bing.com/th/id/R.1742abadb5bce65a001082cad478882c?rik=9jZni6EFE5wzrw&riu=http%3a%2f%2fwww.vietnamvisa-easy.com%2fblog%2fwp-content%2fuploads%2f2013%2f11%2fQuy-Nhon-travel-vietnam-visa-vietnam-embassy3.jpg&ehk=E5FDHwLUgaue6jlsxK%2fO4iMQYQpAs6J42ftkAACuTvA%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" />
                         </Col>  
                     </>   
                     );
@@ -48,7 +48,7 @@ function  RoomProvince (props){
 
     return(<div>
                 <div className='titleRoomProvince'>
-                    <h3 style={{color:"#660000"}}>{props.title}</h3>
+                    <h3 style={{color:"#660000",marginTop:40}}>{props.title}</h3>
                     <p>{props.desc}</p>
                 </div>
                 <Row  gutter={[16, 16]} >

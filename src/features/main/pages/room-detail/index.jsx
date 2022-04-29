@@ -6,6 +6,12 @@ import AppCarousel from '../carousel';
 import image1 from '../../../../assets/images/modern-design.jpg';
 import image2 from '../../../../assets/images/clean-design.jpg';
 import image3 from '../../../../assets/images/great-support.jpg';
+import {
+  Link,
+  useRouteMatch,
+  useParams
+} from "react-router-dom";
+
 const items = [
   {
     key: '1',
@@ -23,20 +29,21 @@ const items = [
     image: image3
   }
 ];
-const roomDetail = {
-  id: 'facd0009as9fffff-feidws456',
-  title: 'Easy to customise',
-  detail: '',
-  images: [
-    'https://sncdn.com/imagecache/db/id/11587/6783564a.jpg',
-    'https://images.trvl-media.com/hotels/1000000/10000/5400/5363/d44a63cd_z.jpg',
-    'https://content.r9cdn.net/himg/f5/94/af/leonardo-178075906-Hyatt-Ziva-Los-Cabos-Club-Ocean-View-Master-Double_O-343218.jpg'
-  ]
-};
-const dataCarousel = roomDetail.images.map(item =>{
-  return {image: item, key: Math.random()};
-});
+
 function RoomDetail() {
+  const roomDetail = {
+    id: '',
+    title: 'Easy to customise',
+    detail: '',
+    images: [
+      'https://sncdn.com/imagecache/db/id/11587/6783564a.jpg',
+      'https://images.trvl-media.com/hotels/1000000/10000/5400/5363/d44a63cd_z.jpg',
+      'https://content.r9cdn.net/himg/f5/94/af/leonardo-178075906-Hyatt-Ziva-Los-Cabos-Club-Ocean-View-Master-Double_O-343218.jpg'
+    ]
+  };
+  const dataCarousel = roomDetail.images.map(item =>{
+    return {image: item, key: Math.random()};
+  });
   return (
     <div id="feature" className="block featureBlock bgGray">
       <div className="container-fluid">
@@ -46,7 +53,7 @@ function RoomDetail() {
         <AppCarousel data={dataCarousel} />
         <div>
           <h4 className="titleHolder marginTop">Thông tin chi tiết phòng trọ</h4>
-          <DetailsInfoRoom />
+         
           <div className='box'>
             <div className='titleHolder'>Mô tả chi tiết</div>
             KHAI TRƯƠNG PHÒNG CHO THUÊ NGAY NGÃ TƯ GÒ MÂY VỚI GIÁ SIÊU RẺ 🌟<br />
@@ -80,7 +87,7 @@ function RoomDetail() {
             ☎️ Điện thoại liên hệ:<br />
           </div>
           <div className='marginTop'>
-            <RoomsInfo title='Phòng tương thích' data={items} />
+            <DetailsInfoRoom title='Phòng tương thích' />
           </div>
 
           <h4 className='marginTop'>Bình luận</h4>

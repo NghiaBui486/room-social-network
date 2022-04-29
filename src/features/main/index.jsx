@@ -7,6 +7,7 @@ import RoomDetail from "./pages/room-detail";
 import Home from "./pages/home";
 import Login from "../../components/login";
 import Register from "../../components/register";
+import ListRooms from "./pages/list-room";
 import { Layout } from 'antd';
 const { Header, Content, Footer } = Layout;
 
@@ -21,6 +22,7 @@ function HomePage() {
           <Route path="/detail/*" element={<RoomDetail />} />
           <Route path="/login/*" element={<Login />} />
           <Route path="/register/*" element={<Register />} />
+          <Route path="/list-room/*" element={<ListRooms />} />
           <Route path="/" element={<Home />}>
           </Route>
         </Routes>

@@ -1,28 +1,43 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Row, Col } from 'antd';
-import { Card } from 'antd';
+import { Card, Rate } from 'antd';
+import evaluationService from '../../../../services/evaluationService';
+import { useParams } from "react-router-dom";
 const { Meta } = Card;
 
 function RoomsInfo(props) {
-  
   var items = props.data;
+
+  const [evadata, setevaData] = useState([]);
+  useEffect(() => {
+    evaluationService.evaluationRoom().then((res) => {
+      setevaData(res);
+      // console.log(res);
+    })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
   const roomsInfo = items.map((item) => {
-    return (
-      <Col md={{ span: 8 }} key={item.key} >
-        <a href="/room-social-network/detail/facd0009as9fffff-feidws456">
-          <Card
-            hoverable
-            cover={<img alt={item.title} src={item.image} />}
-          >
-            <Meta title={item.title} />
-            <div>Diện tích: 40m²</div>
-            <div>Địa chỉ: {item.diachi}</div>
-            <div>Đánh giá: ⭐️⭐️⭐️</div>
-            <div>1.200.000đ/tháng</div>
-          </Card>
-        </a>
-      </Col>
-    )
+    const evaluation = evadata.find(element => element.roomId === item.roomId)
+    if (evaluation) {
+      return (
+        <Col md={{ span: 8 }} key={item.roomId} >
+          <a href={`/room-social-network/detail/${item.roomId}`}>
+            <Card
+              hoverable
+              cover={<img alt={item.descriptionRoom} />}
+            >
+              <Meta title={item.descriptionRoom} />
+              <div>Diện tích:{item.capacity}m2</div>
+              <div>Địa chỉ: {item.street} </div>
+              <div>Đánh giá: <Rate disabled defaultValue={evaluation.rate} /></div>
+              <div>Giá: {item.price}/tháng</div>
+            </Card>
+          </a>
+        </Col>
+      )
+    }
   });
   return (
     <div className="container-fluid">

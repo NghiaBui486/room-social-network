@@ -1,21 +1,23 @@
-import React from 'react';
-import RoomsInfo from "../rooms-info"
-import AppCarousel from "../carousel"
+import React,{useEffect, useState} from 'react';
+import RoomsInfo from "../rooms-info";
+import AppCarousel from "../carousel";
+import RoomProvince from '../room-province';
+import Search from '../search';
 import image1 from '../../../../assets/images/modern-design.jpg';
 import image2 from '../../../../assets/images/clean-design.jpg';
 import image3 from '../../../../assets/images/great-support.jpg';
 import image4 from '../../../../assets/images/easy-customise.jpg';
 import image5 from '../../../../assets/images/unlimited-features.jpg';
 import image6 from '../../../../assets/images/advanced-option.jpg';
-import RoomProvince from '../room-province';
-
+import {  Button } from 'antd';
+import roomService from '../../../../services/roomService';
 
 const items = [
   {
     key: '1',
     title: 'Clean and Elegant',
-    image: image1,
-    diachi:"Quy Nhon"
+    image: image1
+    
   },
   {
     key: '2',
@@ -66,11 +68,27 @@ const images = [
 ]
 
 function Home() {
+  const [dataRoom, setRoom] = useState([]);
+  useEffect (() => {
+    roomService.authentroom().then((res) => {
+      setRoom(res);
+  })
+  .catch((error) => {
+    console.log(error);
+  });  
+  }, []);
+  console.log(dataRoom);
   return (
     <div id="feature" className="block featureBlock bgGray">
       <AppCarousel data={images} />
-      <RoomsInfo title="Tin mới đăng" desc="Thông tin các phòng trọ mới đăng" data={items} />
-      <RoomsInfo title="Tin nổi bật trong ngày" desc="Thông tin các phòng trọ nổi bật trong ngày" data={items} />
+      <Search/>
+      <RoomsInfo title="Tin mới đăng" desc="Thông tin các phòng trọ mới đăng"  data={dataRoom} />
+      <a href='/room-social-network/list-room/'> 
+          <Button type='primary' className='btnsearch' style={{marginLeft:650,marginTop:20}}>
+              Xem tất cả
+          </Button>
+      </a>
+      <RoomsInfo title="Tin nổi bật trong ngày" desc="Thông tin các phòng trọ nổi bật trong ngày" data={dataRoom} />
       <RoomProvince title="Khám phá phòng trọ ở các thành phố lớn" desc="Tìm kiếm phòng trọ trong thành phố lớn và các tỉnh thành liên quan" data ={items}/>
     </div>
   );

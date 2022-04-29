@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import img1 from '../../assets/images/bg-hero.jpg'
 import './login.scss';
-import { Form, Input, Button, Checkbox } from 'antd';
 const image = { url: '../../assets/' }
 
 function Login() {
@@ -13,7 +12,10 @@ function Login() {
     //     const onFinishFailed = (errorInfo) => {
     //       console.log('Failed:', errorInfo);
     //     };
-    return (<>
+
+    
+    return (
+    <>
     <div id="feature" className="block featureBlock bgGray">
         
         <div id="login" className="login-1">
@@ -47,7 +49,7 @@ function Login() {
                                     <input type="submit" name="submit" class="btnsubmit" value="Đăng nhập" />
                                 </div>
 
-                                <div id="register-link" class="text-right">
+                                <div id="register-link" className="text-right" style={{marginLeft: 50,marginTop:10}}>
                                     <br></br>
                                     <label>Bạn chưa có tài khoản? </label>
                                     <Link to="../register"> Đăng ký</Link>

@@ -33,7 +33,7 @@ const Register = () => {
                                     <input class="form-control" type="password" name="psw-repeat" id="psw-repeat" required></input>
                                     <br></br>
                                     <label class="toila">Họ và tên</label>
-                                   <input  class="form-control" type="text" placeholder="Họ và tên" name="email" id="email" required></input>
+                                   <input  class="form-control" type="text" placeholder="" name="email" id="email" required></input>
                                     <br></br>
                                     <fieldset class="form-control">
                                  <label class="toila">Giới tính</label>
@@ -49,10 +49,10 @@ const Register = () => {
                              <input class="form-control" type="date"></input>
                              <br></br>
                              <label class="toila">Số điện thoại</label>
-                             <input class="form-control" type="text" placeholder="Enter sđt" name="email" id="email" required></input>
+                             <input class="form-control" type="text" placeholder="" name="email" id="email" required></input>
                              <br></br>
                              <label class="toila">Gmail</label>
-                             <input class="form-control" type="text" placeholder="Enter gmail" name="email" id="email" required></input>
+                             <input class="form-control" type="text" placeholder="" name="email" id="email" required></input>
                              <hr></hr>
                              <p class="accept"><input type="checkbox"></input> Tôi chấp nhận điều kiện và các chính sách riêng tư.</p>
                               <div class="flex-btn"><button type="submit" class="registerbtn">Đăng ký</button></div>
