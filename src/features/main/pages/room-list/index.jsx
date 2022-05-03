@@ -11,6 +11,9 @@ function RoomList() {
   const [temp, setTemp] = useState(true)
   const {id} = useParams()
   let dataRoomSearch = useContext(DataContext).dataRoomSearch
+  dataRoomSearch = dataRoomSearch.filter((e) => {
+    return e.statusRoom == 1
+  })
   const [title, setTitle] = useState("Tất cả tin đăng")
   if(id && temp) {
       dataRoomSearch = dataRoomSearch.filter((e) => {
